@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الروابط الشخصية</title>
+    <!-- استدعاء الخط العربي (تجوال) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- استدعاء مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 25px;
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid #D4AF37;
+            padding: 3px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(212, 175, 55, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+        }
+        h1 {
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        p.bio {
+            font-size: 15px;
+            color: #b3b3b3;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .link-btn i {
+            position: absolute;
+            right: 20px;
+            font-size: 22px;
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.15);
+            color: #D4AF37;
+        }
+        
+        /* ألوان التطبيقات عند المرور عليها */
+        .tiktok:hover i { color: #fff; text-shadow: -2px -2px 0 #00f2fe, 2px 2px 0 #ff0050; }
+        .facebook:hover i { color: #1877F2; }
+        .telegram:hover i { color: #229ED9; }
+        .channel:hover i { color: #D4AF37; }
+        .instagram:hover i { color: #E1306C; }
+        .snapchat:hover i { color: #FFFC00; text-shadow: 0 0 2px #000; }
+        .whatsapp:hover i { color: #25D366; text-shadow: 0 0 5px rgba(37, 211, 102, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- رابط الصورة الشخصية أو اللوجو -->
+        <img src="https://i.ibb.co/JRgXLYHh/IMG-4922.jpg" alt="اللوجو" class="profile-img">
+        
+        <!-- الاسم -->
+        <h1>~Denoo</h1>
+        
+        <!-- النبذة (البايو) -->
+        <p class="bio"> Programmer and Developer </p>
+
+        <div class="links">
+            <!-- تيك توك -->
+            <a href="https://www.tiktok.com/@z8a" class="link-btn tiktok">
+                <i class="fab fa-tiktok"></i>
+                تيك توك
+            </a>
+
+            <!-- انستقرام -->
+            <a href="https://www.instagram.com/shdt" class="link-btn instagram">
+                <i class="fab fa-instagram"></i>
+                انستقرام
+            </a>
+
+            <!-- سناب شات -->
+            <a href="https://snapchat.com/t/dnLngkpx" class="link-btn snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+                سناب شات
+            </a>
+
+            <!-- فيسبوك -->
+            <a href="#" class="link-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+                فيسبوك
+            </a>
+
+            <!-- تليجرام الشخصي -->
+            <a href="https://t.me/nlnnnc" class="link-btn telegram">
+                <i class="fab fa-telegram"></i>
+                تواصل معي
+            </a>
+
+            <!-- قناة تليجرام -->
+            <a href="https://t.me/devtonx" class="link-btn channel">
+                <i class="fas fa-bullhorn"></i>
+                قناتي في تليجرام
+            </a>
+            
+            <!-- واتساب -->
+            <a href="https://wa.me/umww" class="link-btn whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                واتساب
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
